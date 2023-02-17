@@ -12,7 +12,7 @@ const UserPosts = (props) => {
     const getUserPosts = async () => {
       const userPosts = await axios({
         method: "get",
-        url: `http://localhost:3001/posts/${props.userId}/posts`,
+        url: `https://fb-clone-mern.onrender.com/posts/${props.userId}/posts`,
         headers: {
           Authorization: `Bearer ${token}`,
         },

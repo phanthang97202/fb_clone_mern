@@ -24,7 +24,7 @@ const PostForm = (props) => {
       >
         <div className={classes.container__user}>
           <img
-            src={`http://localhost:3001/assets/${user.picturePath}`}
+            src={`https://fb-clone-mern.onrender.com/assets/${user.picturePath}`}
             alt=""
           />
           <input

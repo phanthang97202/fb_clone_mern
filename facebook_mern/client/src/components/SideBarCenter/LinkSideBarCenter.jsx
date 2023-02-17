@@ -25,7 +25,7 @@ const LinkSideBarCenter = (props) => {
     const deletePost = async () => {
       await axios({
         method: "delete",
-        url: `http://localhost:3001/posts/${idUser}`,
+        url: `https://fb-clone-mern.onrender.com/posts/${idUser}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -39,7 +39,7 @@ const LinkSideBarCenter = (props) => {
     const getAllPosts = async () => {
       const allCommentsOnPost = await axios({
         method: "get",
-        url: `http://localhost:3001/comments/${props.idUser}`,
+        url: `https://fb-clone-mern.onrender.com/comments/${props.idUser}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -60,7 +60,7 @@ const LinkSideBarCenter = (props) => {
     const getAllPosts = async () => {
       const allCommentsOnPost = await axios({
         method: "get",
-        url: `http://localhost:3001/comments/${props.idUser}`,
+        url: `https://fb-clone-mern.onrender.com/comments/${props.idUser}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -81,7 +81,7 @@ const LinkSideBarCenter = (props) => {
       <video
         className={classes.videoUpload}
         controls
-        src={`http://localhost:3001/assets/${props.userPicturePath}`}
+        src={`https://fb-clone-mern.onrender.com/assets/${props.userPicturePath}`}
         type="video/mp4"
       ></video>
     );
@@ -89,7 +89,7 @@ const LinkSideBarCenter = (props) => {
   const Image = () => {
     return (
       <img
-        src={`http://localhost:3001/assets/${props.userPicturePath}`}
+        src={`https://fb-clone-mern.onrender.com/assets/${props.userPicturePath}`}
         alt=""
       />
     );
@@ -115,7 +115,7 @@ const LinkSideBarCenter = (props) => {
 
     const postCurrentInfor = await axios({
       method: "get",
-      url: `http://localhost:3001/posts/${props.id_post}`,
+      url: `https://fb-clone-mern.onrender.com/posts/${props.id_post}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -135,7 +135,7 @@ const LinkSideBarCenter = (props) => {
     e.preventDefault();
     await axios({
       method: "patch",
-      url: `http://localhost:3001/posts/${props.id_post}/like`,
+      url: `https://fb-clone-mern.onrender.com/posts/${props.id_post}/like`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -164,7 +164,7 @@ const LinkSideBarCenter = (props) => {
         <div className={classes.container__owner}>
           <div>
             <img
-              src={`http://localhost:3001/assets/${
+              src={`https://fb-clone-mern.onrender.com/assets/${
                 props.picturePath ||
                 "https://adoreyou.vn/wp-content/uploads/anh-hot-girl-instagram.jpg"
               }`}
@@ -199,7 +199,7 @@ const LinkSideBarCenter = (props) => {
         </p>
         <div className={classes.container__file}>
           {/* <img
-          src={`http://localhost:3001/assets/${props.userPicturePath}`}
+          src={`https://fb-clone-mern.onrender.com/assets/${props.userPicturePath}`}
           alt=""
         /> */}
           {fileUpload === "mp4" && <Video></Video>}

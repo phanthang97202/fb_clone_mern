@@ -11,7 +11,10 @@ const SideBarLeft = () => {
   return (
     <div className={classes.container}>
       <Link to={`/profile/${user._id}`} className={classes.avatar}>
-        <img src={`http://localhost:3001/assets/${user.picturePath}`} alt="" />
+        <img
+          src={`https://fb-clone-mern.onrender.com/assets/${user.picturePath}`}
+          alt=""
+        />
         <p>{`${user.firstName} ${user.lastName}`}</p>
       </Link>
       <LinkSideBarLeft icon="heart" title="Hẹn hò" />

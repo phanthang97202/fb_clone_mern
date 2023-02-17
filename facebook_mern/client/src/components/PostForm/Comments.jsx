@@ -20,7 +20,7 @@ const Comments = (props) => {
     const dataCommentOnPost = async () => {
       return await axios({
         method: "post",
-        url: "http://localhost:3001/comments/",
+        url: "https://fb-clone-mern.onrender.com/comments/",
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
@@ -65,7 +65,10 @@ const Comments = (props) => {
   return (
     <div className={classes.comment_post}>
       <div className={classes.comment__form}>
-        <img src={`http://localhost:3001/assets/${user.picturePath}`} alt="" />
+        <img
+          src={`https://fb-clone-mern.onrender.com/assets/${user.picturePath}`}
+          alt=""
+        />
         <div className={classes.comment__input}>
           <input
             ref={buttonRef}
@@ -95,7 +98,7 @@ const Comments = (props) => {
           <img
             width={32}
             height={32}
-            src={`http://localhost:3001/assets/${comment.user.picturePath}`}
+            src={`https://fb-clone-mern.onrender.com/assets/${comment.user.picturePath}`}
             alt=""
           />
           <div>

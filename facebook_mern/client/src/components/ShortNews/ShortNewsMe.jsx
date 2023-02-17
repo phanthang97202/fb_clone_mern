@@ -6,7 +6,10 @@ const ShortNewsMe = () => {
   return (
     <div className={classes.container}>
       <div className={classes.container__avatar}>
-        <img src={`http://localhost:3001/assets/${user.picturePath}`} alt="" />
+        <img
+          src={`https://fb-clone-mern.onrender.com/assets/${user.picturePath}`}
+          alt=""
+        />
       </div>
       <div className={classes.container__infor}>
         <button>

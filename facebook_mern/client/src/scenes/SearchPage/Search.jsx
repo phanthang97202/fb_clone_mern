@@ -19,7 +19,7 @@ const Post = () => {
     const getUserPosts = async () => {
       const userPosts = await axios({
         method: "GET",
-        url: `http://localhost:3001/posts${location.search}`,
+        url: `https://fb-clone-mern.onrender.com/posts${location.search}`,
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",

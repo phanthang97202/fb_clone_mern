@@ -13,7 +13,7 @@ const SideBarRight = () => {
     const getAllUsers = async () => {
       const users = await axios({
         method: "get",
-        url: "http://localhost:3001/users",
+        url: "https://fb-clone-mern.onrender.com/users",
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -25,7 +25,7 @@ const SideBarCenter = () => {
     const getUserPosts = async () => {
       const userPosts = await axios({
         method: "GET",
-        url: "http://localhost:3001/posts",
+        url: "https://fb-clone-mern.onrender.com/posts",
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",

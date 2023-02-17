@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:3001/auth/register",
+      "https://fb-clone-mern.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
@@ -81,11 +81,14 @@ const Form = () => {
   const selectorState = useSelector((state) => state.auth.user);
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("http://localhost:3001/auth", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
-    });
+    const loggedInResponse = await fetch(
+      "https://fb-clone-mern.onrender.com/auth",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      }
+    );
     const loggedIn = await loggedInResponse.json();
     // console.log("===data loggedIn ", loggedIn);
     onSubmitProps.resetForm();

@@ -84,7 +84,7 @@ const NavBar = () => {
         </button>
         <div>
           <img
-            src={`http://localhost:3001/assets/${user.picturePath}`}
+            src={`https://fb-clone-mern.onrender.com/assets/${user.picturePath}`}
             alt=""
           />
           <button className={classes.liveAccount}></button>

@@ -46,7 +46,7 @@ const FormDataPost = (props) => {
 
       const dataFinish = await axios({
         method: "post",
-        url: "http://localhost:3001/posts",
+        url: "https://fb-clone-mern.onrender.com/posts",
         headers: {
           Authorization: `Bearer ${token}`,
           // "Content-Type": "application/json",
@@ -80,7 +80,7 @@ const FormDataPost = (props) => {
         <form action="" encType="multipart/form-data">
           <div className={classes.container__user}>
             <img
-              src={`http://localhost:3001/assets/${user.picturePath}`}
+              src={`https://fb-clone-mern.onrender.com/assets/${user.picturePath}`}
               alt=""
             />
             <div>

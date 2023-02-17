@@ -8,8 +8,8 @@ const LinkSideBarRight = (props) => {
         <img
           src={
             props.picturePath
-              ? `http://localhost:3001/assets/${props.picturePath}`
-              : "http://localhost:3001/assets/gg.jpg"
+              ? `https://fb-clone-mern.onrender.com/assets/${props.picturePath}`
+              : "https://fb-clone-mern.onrender.com/assets/gg.jpg"
           }
           alt=""
         />

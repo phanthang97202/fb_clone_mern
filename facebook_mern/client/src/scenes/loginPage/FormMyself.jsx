@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:3001/auth/register",
+      "https://fb-clone-mern.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
@@ -87,7 +87,7 @@ const Form = () => {
       password: "12345678",
     });
     const loggedIn = await axios({
-      url: "http://localhost:3001/auth",
+      url: "https://fb-clone-mern.onrender.com/auth",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       data: data,
@@ -112,7 +112,7 @@ const Form = () => {
       password: "12345678",
     });
     const loggedIn = await axios({
-      url: "http://localhost:3001/auth",
+      url: "https://fb-clone-mern.onrender.com/auth",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       data: data,

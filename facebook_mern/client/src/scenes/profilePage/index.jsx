@@ -19,7 +19,7 @@ const ProfilePage = () => {
     const handleProfile = async (e) => {
       const user = await axios({
         method: "get",
-        url: `http://localhost:3001/users/${param.userId}`,
+        url: `https://fb-clone-mern.onrender.com/users/${param.userId}`,
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const ProfilePage = () => {
             <div className={classes.profile__coverImage}>
               <div className={classes.profile__image}>
                 <img
-                  src={`http://localhost:3001/assets/${profile.picturePath}`}
+                  src={`https://fb-clone-mern.onrender.com/assets/${profile.picturePath}`}
                   alt=""
                 />
                 <button>
@@ -51,7 +51,7 @@ const ProfilePage = () => {
                 <div className={classes.profile__box_left}>
                   <div className={classes.profile__infor_avatar}>
                     <img
-                      src={`http://localhost:3001/assets/${profile.picturePath}`}
+                      src={`https://fb-clone-mern.onrender.com/assets/${profile.picturePath}`}
                       alt=""
                     />
                   </div>
@@ -61,37 +61,37 @@ const ProfilePage = () => {
                     <ul>
                       <li>
                         <img
-                          src={`http://localhost:3001/assets/friend.jpg`}
+                          src={`https://fb-clone-mern.onrender.com/assets/friend.jpg`}
                           alt=""
                         />
                       </li>
                       <li>
                         <img
-                          src={`http://localhost:3001/assets/friend2.jpg`}
+                          src={`https://fb-clone-mern.onrender.com/assets/friend2.jpg`}
                           alt=""
                         />
                       </li>
                       <li>
                         <img
-                          src={`http://localhost:3001/assets/friend.jpg`}
+                          src={`https://fb-clone-mern.onrender.com/assets/friend.jpg`}
                           alt=""
                         />
                       </li>
                       <li>
                         <img
-                          src={`http://localhost:3001/assets/friend2.jpg`}
+                          src={`https://fb-clone-mern.onrender.com/assets/friend2.jpg`}
                           alt=""
                         />
                       </li>
                       <li>
                         <img
-                          src={`http://localhost:3001/assets/friend.jpg`}
+                          src={`https://fb-clone-mern.onrender.com/assets/friend.jpg`}
                           alt=""
                         />
                       </li>
                       <li>
                         <img
-                          src={`http://localhost:3001/assets/friend2.jpg`}
+                          src={`https://fb-clone-mern.onrender.com/assets/friend2.jpg`}
                           alt=""
                         />
                       </li>

@@ -71,7 +71,7 @@ const UpdateForm = (props) => {
     e.preventDefault();
     const postUp = await axios({
       method: "patch",
-      url: `http://localhost:3001/posts/${props.idPostUpdate}/updatePost/${user._id}`,
+      url: `https://fb-clone-mern.onrender.com/posts/${props.idPostUpdate}/updatePost/${user._id}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -116,7 +116,7 @@ const UpdateForm = (props) => {
             <form action="" encType="multipart/form-data">
               <div className={classes.container__user}>
                 <img
-                  src={`http://localhost:3001/assets/${user.picturePath}`}
+                  src={`https://fb-clone-mern.onrender.com/assets/${user.picturePath}`}
                   alt=""
                 />
                 <div>
