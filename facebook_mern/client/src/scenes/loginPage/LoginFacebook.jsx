@@ -21,7 +21,7 @@ const LoginFacebook = () => {
     e.preventDefault();
     const user = await axios({
       method: "post",
-      url: "http://localhost:3001/auth",
+      url: "https://fb-clone-mern.onrender.com/auth",
       headers: {
         Authorization: "Bearer null",
         "Content-Type": "application/json",
