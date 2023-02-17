@@ -1,0 +1,22 @@
+.container {
+  position: sticky;
+  top: 73px;
+  left: 0;
+}
+.container__navbar {
+  color: #65676b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__navbar > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container__navbar > div > i {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container__navbar > div > i:nth-child(2) {
+  margin: 0 1.6rem;
+}

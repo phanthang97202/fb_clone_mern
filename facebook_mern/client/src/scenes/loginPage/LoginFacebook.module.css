@@ -1,0 +1,100 @@
+.container {
+  /* background-color: #fff; */
+}
+.login {
+  /* position: fixed;
+  top: 22%; */
+  display: inline-flex;
+  padding-top: 11%;
+  /* padding-top: 160px; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.login__info {
+  text-align: left;
+  width: 38%;
+}
+.login__info > img {
+  width: 300px;
+  height: 100px;
+  margin-left: -40px;
+}
+.login__info > p {
+  font-size: 2rem;
+  margin: 0;
+}
+.login_form {
+  padding: 10px;
+  border-radius: 10px;
+  width: 26%;
+}
+.login_form > form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  padding: 10px;
+}
+form > * {
+  margin: 6px 0;
+  text-decoration: none;
+}
+
+form > input:nth-child(1) {
+  background-color: #fff;
+  border: none;
+  padding: 20px 16px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  font-size: 1rem;
+}
+form > input:nth-child(2) {
+  background-color: #fff;
+  border: none;
+  padding: 20px 16px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  font-size: 1rem;
+}
+form > input:nth-child(1):focus,
+form > input:nth-child(2):focus {
+  outline: none;
+}
+form > button:nth-child(3) {
+  background-color: #1877f2;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.createNewAcc {
+  background-color: #42b72a;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login_form > p {
+  /* font-size: 1rem; */
+}
+form > hr {
+  margin: 20px 0;
+  border: 1px solid #e5e7ea;
+}

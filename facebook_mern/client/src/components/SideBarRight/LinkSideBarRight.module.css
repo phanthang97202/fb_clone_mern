@@ -1,0 +1,38 @@
+.container {
+  /* background-color: #5e8cea; */
+  color: #65676b;
+  text-decoration: none;
+}
+.container__navbar {
+  color: #65676b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__navbar > p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container__navbar > div > i {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container__navbar > div > i:nth-child(2) {
+  margin: 0 1.6rem;
+}
+.container__users {
+  display: flex;
+  align-items: center;
+  /* float: right; */
+}
+.container__users > img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.container__users > p {
+  padding-left: 0.8rem;
+  color: #000;
+  font-weight: 500;
+}

@@ -1,0 +1,109 @@
+.introduce {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.introduce > h2 {
+  margin: 0 0 10px 0;
+}
+
+.add_stories,
+.edit_detail,
+.edit_hobbies {
+  border: none;
+  background-color: #d8d8db;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  /* font-size: 0.9rem; */
+  margin: 4px 0;
+}
+.introduce__common {
+  list-style-type: none;
+  padding: 0;
+}
+.introduce__common > li {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  font-size: 14px;
+}
+.introduce__common > li > i {
+  color: #909097;
+  padding-right: 10px;
+}
+.introduce__common > li > p {
+  margin: 0;
+}
+.edit_detail {
+}
+.hobbies {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.hobbies > li {
+  border: 1px solid #909097;
+  padding: 8px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.edit_hobbies {
+}
+
+/* // IMAGE  */
+.introduce__images {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.introduce__images_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.view__all_images {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgb(100, 100, 247);
+}
+.introduce__images_item {
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.introduce__images_item > li {
+  /* align-self: flex-start; */
+}
+.introduce__images_item > li > img {
+  width: 129px;
+  height: 129px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* // FRIENDS  */
+.friends {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.introduce__images_item > li > p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding-bottom: 20px;
+}

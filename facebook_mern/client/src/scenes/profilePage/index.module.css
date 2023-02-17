@@ -1,0 +1,199 @@
+.container {
+}
+
+.profile__coverImage {
+  margin-top: -23px;
+  padding: 0 14%;
+  /* border-bottom: 1px solid rgb(228, 223, 223); */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding-bottom: 14px;
+}
+.profile__image {
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.profile__image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile__image > button {
+  position: absolute;
+  right: 30px;
+  bottom: 16px;
+  background-color: #fff;
+  color: #000;
+  padding: 12px 16px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.profile__image > button:hover {
+  background-color: rgb(231, 227, 227);
+  transition: all 0.3s ease-in-out;
+}
+.profile__image > button > i {
+  padding-right: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* // avatar  */
+.profile__infor {
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 34px 10px 34px;
+  /* border-bottom: 1px solid rgb(210, 207, 207); */
+}
+.profile__box_left {
+  display: flex;
+  align-items: flex-end;
+}
+.profile__infor_avatar {
+  display: flex;
+  width: 168px;
+  height: 168px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 16px;
+  z-index: 2;
+}
+.profile__infor_avatar > img {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile__infor_friend > h2 {
+  margin: 10px 0 0 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.profile__infor_friend > h4 {
+  font-size: 1rem;
+  color: #65676b;
+  margin: 0;
+}
+.profile__infor_friend > ul {
+  margin: 0;
+  display: flex;
+  padding: 10px;
+  list-style-type: none;
+}
+.profile__infor_friend > ul > li {
+  margin-left: -10px;
+}
+.profile__infor_friend > ul > li > img {
+  height: 38px;
+  width: 38px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile__actions {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+.profile__actions_add {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  background-color: #1b74e4;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+.profile__actions_add > i {
+  padding-right: 10px;
+}
+.profile__actions_edit {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  background-color: #e4e6eb;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+}
+.profile__actions_edit > i {
+  padding-right: 10px;
+}
+
+/* navbar  */
+.profile__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 10px; */
+  margin: 0 3%;
+  padding-top: 10px;
+  border-top: 1px solid rgb(210, 207, 207);
+}
+.profile__navbar_left {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link__navbar {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #65676b;
+  padding: 10px 16px;
+  /* border-radius: 6px; */
+}
+.link__navbar:first-child {
+  /* background-color: #e9ebf0;  */
+  border-bottom: 2px solid violet;
+}
+.link__navbar:hover {
+  background-color: #e9ebf0;
+  transition: all 0.3s ease-in-out;
+}
+.profile__navbar_right > button {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #65676b;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+/* // CONTENT  */
+.profile__content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 20px 16.1% 0 16.1%;
+}
+
+.profile__introduce {
+  width: calc(41%);
+  /* background-color: #000; */
+  border-radius: 8px;
+}
+.profile__userposts {
+  width: calc(57%);
+  /* background-color: #1b74e4; */
+}

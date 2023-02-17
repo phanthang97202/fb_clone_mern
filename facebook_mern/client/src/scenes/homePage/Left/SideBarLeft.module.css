@@ -1,0 +1,47 @@
+.container {
+  position: sticky;
+  top: 73px;
+  left: 0;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.avatar > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar > p {
+  padding-left: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.viewmore {
+  /* width: 40px; */
+  display: flex;
+  align-items: center;
+}
+.viewmore > button {
+  background-color: #e4e6eb;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+}
+
+.viewmore > p {
+  padding-left: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.policy {
+  /* margin-top: 1.4rem; */
+}
+.policy > a {
+  margin: 0 4px;
+  text-decoration: none;
+}

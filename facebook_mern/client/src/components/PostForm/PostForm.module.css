@@ -1,0 +1,67 @@
+.container {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.container__user {
+  display: flex;
+  /* align-items: center; */
+}
+.container__user > img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container__user > input {
+  background-color: #f0f2f5;
+  flex: 1;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+.container__user > input:hover {
+  background-color: #e7e7e7;
+}
+.container__user > input:focus {
+  outline: none;
+}
+.container__actions {
+  border-top: 1px solid rgb(214, 207, 207);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding-top: 4px;
+}
+.container__actions > button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+.container__actions > button:hover {
+  background-color: #e7e8e9;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.container__actions > button > img {
+  padding-right: 10px;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+.container__actions > button {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #65676b;
+}

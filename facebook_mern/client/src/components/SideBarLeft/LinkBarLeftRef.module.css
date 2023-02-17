@@ -1,0 +1,8 @@
+.container {
+  border-top: 1px solid #c5c6c8;
+}
+.container__title {
+  font-size: 1rem;
+  color: #65676b;
+  font-weight: 500;
+}

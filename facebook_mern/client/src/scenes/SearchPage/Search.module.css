@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  margin-top: -16px;
+  padding: 0 0 0 0.8rem;
+}
+
+.container__sidebar {
+  width: 20%;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  border-right: 1px solid #e0dcdc;
+}
+.container__result {
+  /* background-color: #000; */
+  background-color: #f0f2f5;
+  width: 80%;
+}
+.container__result > div {
+  width: 50%;
+  margin: auto;
+}

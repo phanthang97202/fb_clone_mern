@@ -1,0 +1,155 @@
+.container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  z-index: 10;
+}
+
+.container__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoPage {
+  margin-right: 8px;
+  margin-bottom: -6px;
+}
+.linkLogo {
+  text-decoration: none;
+}
+
+.container__search > div {
+  position: relative;
+}
+.container__search > div > i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.container__search > div > i:hover {
+  cursor: pointer;
+  color: #727374;
+}
+.container__search > div > input {
+  padding-left: 36px;
+  height: 40px;
+  width: 240px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #f0f2f5;
+}
+.container__search > div > input:focus {
+  outline: none;
+  background-color: #ebebeb;
+  transition: all 0.1s ease-in-out;
+}
+.container__search > div > input:hover {
+  background-color: #ebebeb;
+  transition: all 0.1s ease-in-out;
+}
+.container__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__navbar > button {
+  background-color: transparent;
+  width: 56px;
+  height: 56px;
+  margin: 0 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+.container__navbar > button:hover {
+  /* outline: 1px solid #f0f2f5; */
+  /* border-radius: 6px; */
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.container__navbar > button > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__actions > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e4e6eb;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.container__actions > button:hover {
+  cursor: pointer;
+  background-color: #bec0c5;
+}
+.container__actions > div:hover {
+  cursor: pointer;
+}
+.container__actions > button > i {
+  font-size: 1.2rem;
+}
+.container__actions > div > img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.container__actions > div:hover .logOutAccount {
+  display: block;
+}
+.container__actions > div {
+  position: relative;
+}
+.liveAccount {
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: green;
+  outline: 1px solid #e4e6eb;
+}
+
+/* // logout   */
+.logOutAccount {
+  background-color: #fff;
+  width: 100px;
+  position: absolute;
+  top: 70px;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+.logOutAccount:hover {
+  background-color: #e4e6eb;
+}
+.logOutAccount > i {
+  padding-right: 4px;
+}

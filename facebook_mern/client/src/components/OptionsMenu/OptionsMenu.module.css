@@ -1,0 +1,25 @@
+.container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 6px;
+}
+.container > ul {
+  list-style-type: none;
+  padding: 16px;
+  margin: 0;
+}
+.container > ul > li {
+  display: flex;
+  align-items: center;
+}
+.container > ul > li > img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.container > ul > li > p {
+  margin: 0;
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
