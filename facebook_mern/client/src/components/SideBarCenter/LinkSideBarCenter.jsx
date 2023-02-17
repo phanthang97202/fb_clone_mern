@@ -25,11 +25,13 @@ const LinkSideBarCenter = (props) => {
     const deletePost = async () => {
       await axios({
         method: "delete",
-        url: `https://fb-clone-mern.onrender.com/posts/${idUser}`,
+        // url: `https://fb-clone-mern.onrender.com/posts/${idUser}`,
+        url: `https://fb-clone-mern.onrender.com/posts/${props.id_post}/deletePost/${user._id}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
+      console.log("=====idUser delete post====", idUser);
       dispatch(isLoad({ isLoading: true }));
       // window.location.reload();
     };

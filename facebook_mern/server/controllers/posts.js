@@ -96,6 +96,34 @@ export const deletePost = async (req, res) => {
   }
 };
 
+// postsRouter.delete('/:idPost/deletePost/:idUser', verifyToken, deletePost);
+
+export const deleteOwnerPost = async (req, res) => {
+  try {
+    const { idPost: id, idUser: userId } = req.params;
+    const postOnUser = await Post.find({ userId })
+      .sort({ createdAt: -1 })
+      .select('+ _id');
+
+    const checkUserOwnedPost = postOnUser.some((item, index) => {
+      return `${item['_id']}` === `${id}`;
+    });
+    if (checkUserOwnedPost) {
+      const post = await Post.findByIdAndDelete({ _id: id });
+      res.status(201).json({
+        status: 'success',
+      });
+    } else {
+      res.status(404).json({
+        status: 'fail',
+        message: 'Không tìm thấy id bài viết này! Kiểm tra lại!',
+      });
+    }
+  } catch (err) {
+    res.status(404).json({ status: 'fail', message: err.message });
+  }
+};
+
 /* UPDATE */
 
 export const updatePost = async (req, res, next) => {

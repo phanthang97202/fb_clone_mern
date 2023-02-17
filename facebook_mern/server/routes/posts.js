@@ -5,6 +5,7 @@ import {
   getUserPosts,
   likePost,
   deletePost,
+  deleteOwnerPost,
   // searchPosts,
   // commentsPost,
   updatePost,
@@ -25,6 +26,7 @@ postsRouter.patch('/:idPost/like', verifyToken, likePost);
 
 // DELETE
 postsRouter.delete('/:idPost', verifyToken, deletePost);
+postsRouter.delete('/:idPost/deletePost/:idUser', verifyToken, deleteOwnerPost);
 
 // COMMENT
 // postsRouter.post('/:id', verify, commentsPost);
