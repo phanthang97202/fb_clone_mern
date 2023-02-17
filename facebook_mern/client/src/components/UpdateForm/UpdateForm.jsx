@@ -18,7 +18,7 @@ const UpdateForm = (props) => {
     const handleGetCurrentPost = async (e) => {
       const getDataCurrentPost = await axios({
         method: "get",
-        url: `http://${process.env.REACT_APP_UNSPLASH_PORT_SERVER}/posts/${props.idPostUpdate}`,
+        url: `https://fb-clone-mern.onrender.com//posts/${props.idPostUpdate}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
